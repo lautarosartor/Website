@@ -1,0 +1,165 @@
+* {
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../img/background.png');
+    box-shadow: 0 0 100vh 100vh inset #0000009b;
+}
+
+.value {
+    background-color: #75817380;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    gap: 5px;
+    padding: 10px;
+    border-radius: 5%;
+    font-size: .9rem;
+    transition: all .5s;
+}
+
+.value:not(:active):hover,
+.value:focus {
+    background-color: #09BC8A;
+}
+
+.active {
+    background-color: #09BC8A;
+    outline: none;
+    color: #000;
+}
+
+.active i {
+  color: #000;
+}
+
+.active::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -10px;
+    width: 5px;
+    height: 80%;
+    background-color: #09BC8A;
+    border-radius: 5px;
+    opacity: 1;
+    transition: all .3s;
+}
+
+.scrolled {
+    background-color: #02040280;
+    backdrop-filter: blur(2px);
+}
+
+section {
+    scroll-margin-top: 6rem;
+    background-color: #09BC8A80;
+    backdrop-filter: blur(4px);
+}
+
+.card {
+    width: 100%;
+    background-color: #C6DEC6;
+    border-radius: 30px;
+    box-shadow: rgba(117, 129, 115, .25) 0px 30px 50px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 26px -18px inset;
+}
+
+.card p {
+    color: #758173;
+    font-style: italic;
+}
+
+.card img {
+    height: 4rem;
+    width: 4rem;
+}
+
+.card-project {
+    width: 250px;
+    min-height: 300px;
+    padding: 1rem;
+    border-radius: 30px;
+    background-color: #020402;
+}
+
+.card-project img {
+    border-radius: 30px 30px 3px 3px;
+}
+
+.card-project a:hover,
+.card-project a:hover i {
+    transform: scale(.95);
+    transition: all .3s;
+    color: #000;
+}
+
+footer .btn_1 {
+    width: 180px;
+    height: 180px;
+    cursor: pointer;
+    border: none;
+    border-radius: 100% 5px 5px 5px;
+    transition: .3s;
+}
+
+footer .btn_2 {
+    width: 180px;
+    height: 180px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px 100% 5px 5px;
+    transition: all .3s;
+}
+
+footer .btn_3 {
+    width: 180px;
+    height: 180px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px 5px 5px 100%;
+    transition: .3s;
+}
+
+footer .btn_4 {
+    width: 180px;
+    height: 180px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px 5px 100% 5px;
+    transition: all .3s;
+}
+
+.btn_1 i {
+    font-size: 3rem;
+    color: #25D366;
+}
+
+.btn_2 i {
+    font-size: 3rem;
+    color: #0e76a8;
+}
+
+.btn_3 i {
+    font-size: 3rem;
+    color: #020402;
+}
+
+.btn_4 i {
+    font-size: 3rem;
+    color: #c71610;
+}
+
+.btn_1:hover i,
+.btn_2:hover i,
+.btn_3:hover i,
+.btn_4:hover i {
+    transform: scale(1.2);
+    color: #fff;
+}

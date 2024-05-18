@@ -1,0 +1,24 @@
+[{
+    "src": "./assets/img/portfolio/loading.png",
+    "alt": "1",
+    "demoLink": "",
+    "codeLink": "",
+    "title": "Proyecto 1",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+},
+{
+    "src": "./assets/img/portfolio/loading.png",
+    "alt": "2",
+    "demoLink": "",
+    "codeLink": "",
+    "title": "Proyecto 2",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+},
+{
+    "src": "./assets/img/portfolio/loading.png",
+    "alt": "3",
+    "demoLink": "",
+    "codeLink": "",
+    "title": "Proyecto 3",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+}]

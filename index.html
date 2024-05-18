@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="icon" href="./assets/img/icono.png" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/274b553a30.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Lautaro Sartor</title>
+  </head>
+
+  <body>
+    <!--Navbar-->
+    <nav id="nav" style="min-height: 6rem; z-index: 50"
+      class="sticky top-0 w-full flex flex-wrap gap-4 justify-center items-center bg-[#020402] transition-all duration-500">
+      <a class="value active" onclick="scrollToSection('home')" id="nav-home">
+        <i class="fa-solid fa-house"></i>
+        Inicio
+      </a>
+
+      <a class="value" onclick="scrollToSection('skills')" id="nav-skills">
+        <i class="fa-solid fa-wand-magic-sparkles"></i>
+        Habilitades
+      </a>
+
+      <a class="value" onclick="scrollToSection('portfolio')" id="nav-portfolio">
+        <i class="fa-solid fa-briefcase"></i>
+        Portfolio
+      </a>
+
+      <a class="value" onclick="scrollToSection('contact')" id="nav-contact">
+        <i class="fa-solid fa-address-book"></i>
+        Contacto
+      </a>
+    </nav>
+
+    <main class="lg:px-60 md:px-32 px-4 mx-auto">
+      <!--Home section-->
+      <section class="p-6" id="home">
+        <div class="flex gap-4 flex-col">
+          <div class="mx-auto text-center">
+            <h1 class="text-2xl text-black font-bold">LAUTARO SARTOR</h1>
+            <h2>Full stack web developer</h2>
+            <img src="./assets/img/yo.jpg" alt="Lautaro" class="mt-4 w-60 h-60 rounded-lg">
+          </div>
+          <p class="text-lg">
+            ¡Hola! Soy un desarrollador web entusiasta comprometido con la creación de soluciones digitales y eficientes.
+            Me gradué recientemente como Técnico Universitario en Programación en febrero de este año.
+          </p> 
+          <p class="text-lg">
+            Actualmente, estoy buscando nuevas oportunidades laborales donde pueda aportar mis conocimientos y seguir creciendo profesionalmente.
+          </p>
+          <p class="text-lg">
+            Como desarrollador web, me dedico a transformar ideas en experiencias digitales excepcionales. Mi objetivo es ayudar a las empresas y organizaciones a tener una presencia en línea sólida y funcional, que no solo sea visualmente atractiva, sino también eficiente y fácil de usar.
+          </p>
+        </div>
+      </section>
+
+      <!--Skills section-->
+      <section class="p-6" id="skills" style="min-height: 80vh;">
+        <h2 class="text-2xl text-black font-bold text-center mb-4">Habilidades</h2>
+        
+        <div class="grid xl:grid-cols-2 grid-cols-1 gap-6">
+          <!--Frontend-->
+          <div class="card p-4 mx-auto">
+            <div class="flex flex-wrap h-full gap-4 justify-center">
+              <p class="text-lg font-bold w-full text-center">Tecnologías front-end</p>
+              <img src="./assets/img/tech/html.png" alt="HTML">
+              <img src="./assets/img/tech/css.png" alt="CSS">
+              <img src="./assets/img/tech/js.png" alt="JavaScript">
+              <img src="./assets/img/tech/bootstrap.png" alt="Bootstrap">
+              <img src="./assets/img/tech/tailwind.png" alt="Tailwind">
+              <img src="./assets/img/tech/angular.png" alt="Angular">
+            </div>
+          </div>
+
+          <!--Backend-->
+          <div class="card p-4 mx-auto">
+            <div class="flex flex-wrap gap-4 h-full justify-center">
+              <p class="text-lg font-bold w-full text-center">Tecnologías back-end</p>
+              <img src="./assets/img/tech/csharp.png" alt="C#">
+              <img src="./assets/img/tech/php.png" alt="PHP">
+            </div>
+          </div>
+
+          <!--Database-->
+          <div class="card p-4 mx-auto">
+            <div class="flex flex-wrap gap-4 h-full justify-center">
+              <p class="text-lg font-bold w-full text-center">Bases de datos</p>
+              <img src="./assets/img/tech/mysql.png" alt="MySQL">
+              <img src="./assets/img/tech/sqlite.png" alt="SQLite">
+            </div>
+          </div>
+
+          <!--Tool-->
+          <div class="card p-4 mx-auto">
+            <div class="flex flex-wrap gap-4 h-full justify-center">
+              <p class="text-lg w-full font-bold text-center">Dev Tools</p>
+              <img src="./assets/img/tech/github.png" alt="Git & GitHub">
+              <img src="./assets/img/tech/cmd.png" alt="CMD">
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <!--Portfolio section-->
+      <section class="p-6" id="portfolio" style="min-height: 50vh;">
+        <h6 class="text-2xl text-black text-center font-bold mb-4">Portfolio</h6>
+        <div class="flex flex-wrap justify-center gap-4" id="projects">
+          <!-- AGREGO EL CONTENIDO CON JS
+          <div class="card-project">
+            <img src="./assets/img/yo.jpg" alt="">
+            
+            <div class="my-2 flex justify-between">
+              <a href="" class="text-sm p-1 rounded bg-blue-500" target="_BLANK">
+                Demo <i class="fa-solid fa-arrow-up-right-from-square fa-md"></i>
+              </a>
+              
+              <a href="" class="text-sm p-1 ms-2 rounded bg-[#758173]" target="_BLANK">
+                Code <i class="fa-brands fa-github fa-lg"></i>
+              </a>
+            </div>
+
+            <div>
+              <p class="text-md font-bold">
+                Title
+              </p>
+
+              <p class="text-sm">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              </p>
+            </div>
+          </div>
+          -->
+        </div>
+      </section>
+    </main>
+
+    <footer class="lg:px-60 md:px-32 px-4 mx-auto">
+      <!--Contact section-->
+      <section class="p-6" id="contact" style="min-height: 85vh;">
+        <h6 class="text-2xl text-black font-bold text-center">Contacto</h6>
+      
+        <!--Botones multimedia-->
+        <div class="flex flex-col gap-4 justify-center" style="height: calc(85vh - 6rem);">
+          <p class="text-center">
+            Gracias por tomarte el tiempo de leer. Si queres contactarme enviame un mensaje.
+            <br>
+            Saludos!
+          </p>
+          
+          <!--Botones de arriba-->
+          <div class="flex justify-center gap-4">
+            <a href="https://wa.me/3482446801" target="_BLANK" class="bg-white btn_1 relative hover:bg-[#25D366]">
+              <i class="fa-brands fa-whatsapp absolute m-10 bottom-0 right-0"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/lautarosartor/" target="_BLANK" class="bg-white btn_2 relative hover:bg-[#0e76a8]">
+              <i class="fa-brands fa-linkedin absolute m-10 bottom-0 left-0"></i>
+            </a>
+          </div>
+
+          <!--Botones de abajo-->
+          <div class="flex justify-center gap-4">
+            <a href="https://github.com/lautarosartor" target="_BLANK" class="bg-white btn_3 relative hover:bg-[#020402]">
+              <i class="fa-brands fa-github absolute m-10 top-0 right-0"></i>
+            </a>
+
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sartorlautaro3@gmail.com" target="_BLANK" class="bg-white btn_4 relative hover:bg-[#c71610]">
+              <i class="fa-regular fa-envelope absolute m-10 top-0 left-0"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/cards.js"></script>
+  </body>
+</html>
